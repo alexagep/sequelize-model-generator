@@ -1,8 +1,11 @@
 {
   "name": "sequelize-model-generator",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.2.0",
+  "description": "Generates models for sequelize from existing databases",
+  "main": "./src/index.js",
+  "bin": {
+    "seederalize": "bin/seederalize"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

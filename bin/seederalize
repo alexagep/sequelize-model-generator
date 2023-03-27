@@ -1,0 +1,16 @@
+#!/usr/bin/env node
+"use strict";
+
+const { argv } = require("../utils/argv");
+const { Utils } = require("../utils/utils");
+const argument = process.argv.splice(2);
+
+const config = require("../config/config");
+
+if (argument[0] === "--desc") {
+  Utils.showingHelp();
+} else if (argument[0] === "-v") {
+  Utils.packageVersion();
+} else {
+  require("../src").createModel(config);
+}
